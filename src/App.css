@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  width: 100vw;
+  height: 100vh;
+  background-color: #e3e4da;
+  margin: 0;
+  body {
+  font-family: 'Poppins', sans-serif;
+}
+}
+
+.box {
+  background: #1f0b55;
+  padding: 30px;           
+  border-radius: 15px;
+  color: white; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 450px;
+  height: auto; 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.upper_side {
+  display: flex;
+  gap: 10px;
+}
+
+.input_holder {
+width: 70%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 12px;
+
+  border: 1px solid #ccc;           
+  outline: none;
+
+  background-color: #f9f9f9;
+  color: #333;
+
+  transition: all 0.25s ease;
+}
+
+
+
+
+.copy_btn {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  background-color: #ff9800;
+  color: white;
+  font-weight: 500;
+
+  transition: 0.2s ease;
+}
+
+.copy_btn:hover {
+  background-color: #e68900;
+  transform: scale(1.05);
+}
+
+.components {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.options_row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px; 
+}
+
+.checkbox_group {
+  display: flex;
+  align-items: center; 
+  gap: 8px; 
+}
+
+.checkbox_group label {
+  cursor: pointer;
+}
+.length_color{
+  font-weight: 200;
+}
+
+.popup-notification {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 12px 10px;
+  border-radius: 50px; /* Rounded pill look */
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  z-index: 9999;
+  
+  /* Animation for the "Popping" effect */
+  animation: popUp 0.4s ease-out;
+}
+
+@keyframes popUp {
+  0% { transform: translate(-50%, 100px); opacity: 0; }
+  100% { transform: translate(-50%, 0); opacity: 1; }
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 60%;
+  height: 6px;
+  border-radius: 10px;
+  background: #ccc;
+  outline: none;
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #ff9800;   
+  margin-top: -5px;
+}
